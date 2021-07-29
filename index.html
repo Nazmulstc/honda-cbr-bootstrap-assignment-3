@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-03</title>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/b2fe946889.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Overwrite/Personal CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+
+    <!-- Header area Start Here -->
+    <header class="container-fluid mb-5 text-white banner-bg">
+
+
+        <!-- Menu/Navbar Start Here -->
+        <nav class="navbar navbar-expand-lg navbar-dark mb-5 banner-bg fixed-top">
+            <div class="container text-white">
+                <a class="navbar-brand" href="#">carRide</a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-5 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn text-white btn-bg px-3 py-2" data-bs-toggle="modal"
+                        data-bs-target="#login">
+                        Login
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark m-auto" id="exampleModalLabel">Please sign in</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <form>
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com" required>
+                                            <label for="floatingInput">Email address</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="floatingPassword"
+                                                placeholder="Password" required>
+                                            <label for="floatingPassword">Password</label>
+                                        </div>
+
+                                        <div class="checkbox mb-3">
+                                            <label>
+                                                <input type="checkbox" value="remember-me"> Remember me
+                                            </label>
+                                        </div>
+                                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                                        <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu/Navbar End Here -->
+
+
+        <!-- Section-01
+                    Banner Area Start Here  -->
+        <section class="container">
+            <div class="row d-flex align-items-center py-5">
+                <div class="col-12 col-lg-6 text-light mb-5">
+                    <p><small>Computer-controlled digital transistorized with electronic advance</small></p>
+                    <h1 class="pb-3">Honda CBR 300R</h1>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn text-white btn-bg px-5 py-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Purchase
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="exampleModalLabel">Wealcome to our Bike shope
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    Are you agree to purchase this Bike!!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 banner-img mb-5">
+                    <img src="images/header-bike.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Section-01
+                    Banner Area End Here -->
+
+
+    </header>
+    <!-- Header area End Here -->
+
+
+    <main>
+
+
+        <!--Section-02 
+                   Fetured Bikes area Start Here -->
+        <section class="container mb-5 fetured-bikes">
+            <div class="mb-5 text-center">
+                <h1>Fetured Bikes 2021</h1>
+                <p class="text-danger">Best bike collection</p>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-lg-4 my-5">
+                    <img style="filter: grayscale(100%);" src="images/feature-bike.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-4 my-5">
+                    <img src="images/feature-bike.jpg" alt="">
+                </div>
+                <div class="col-lg-4 my-5">
+                    <img style="filter: grayscale(100%);" src="images/feature-bike.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Section-02
+                     Fetured Bikes area End Here -->
+
+
+        <!-- Section-03 
+                    latest News area Start Here -->
+        <section class="container mb-5 latest-news">
+            <div class="mb-5 text-center">
+                <h1 id="news">Latest News</h1>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-lg-4 my-5">
+                    <div class="card shadow p-3 rounded-3">
+                        <img src="./images/bike-1.png" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="title-text">Ducati XDIAVEL S-73</h5>
+                            <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <a href="./admin/product-details.html" class="btn btn-danger text-light">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 my-5">
+                    <div class="card shadow p-3 rounded-3">
+                        <img src="images/bike-2.png" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="title-text">Motorcycles & Scooters</h5>
+                            <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <a href="./admin/product-details.html" class="btn border border-danger text-danger">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-5">
+                    <div class="card shadow p-3  rounded-3">
+                        <img src="images/bike-3.png" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="title-text">2021 Honda CBR500R</h5>
+                            <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <a href="./admin/product-details.html" class="btn border border-danger text-danger">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-03 
+                    latest News area End Here -->
+
+
+        <!-- Section-04 
+                    Happy Clients says area Start Here -->
+        <section class="container mb-5 latest-news">
+            <div class="mb-5 text-center">
+                <h1>Happy <span class="purpale">Clients says</span></h1>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-lg-4 my-5">
+                    <div class="card shadow p-3 rounded-3">
+                        <img src="images/user-1.png" class="card-img-top rounded-circle" alt="...">
+                        <div class="card-body">
+                            <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <div class="text-center">
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="far fa-star purpale"></i>
+                            </div>
+                            <h5 class="text-center happy-card-title">Regina Miles</h5>
+                            <h5 class="text-center">Banker</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 my-5">
+                    <div class="card shadow p-3 rounded-3">
+                        <img src="images/user-2.png" class="card-img-top rounded-circle" alt="...">
+                        <div class="card-body">
+                            <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <div class="text-center">
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="far fa-star purpale"></i>
+                            </div>
+                            <h5 class="text-center happy-card-title">Regina Miles</h5>
+                            <h5 class="text-center">Banker</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-5">
+                    <div class="card shadow p-3  rounded-3">
+                        <img src="images/user-3.jpg" class="card-img-top rounded-circle" alt="...">
+                        <div class="card-body">
+                            <p class="news-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                                fermentum amet faucibus sed id nisi lectus at.</p>
+                            <div class="text-center">
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="fas fa-star purpale"></i>
+                                <i class="far fa-star purpale"></i>
+                            </div>
+                            <h5 class="text-center happy-card-title">Regina Miles</h5>
+                            <h5 class="text-center">Banker</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-04 
+                    Happy Clients says area End Here -->
+
+
+        <!-- Section-05 
+                    Frequently Asked Questions area Start Here -->
+        <section class="container mb-5 latest-news">
+            <div class="mb-5 text-center">
+                <h1>Frequently Asked <span class="purpale">Questions</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <img src="images/faq.png" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What are the most important things I should
+                                    know about riding a bike?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <small>Safety First! Always obey the rules of the road. Obey all traffic signals,
+                                        signs, and laws. Get in the mindset of “driving” your bike—not just “riding”
+                                        your bike. This will help you be a more focused and legally compliant bike
+                                        rider. </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I tell if my helmet is old and I need a
+                                    new one?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <small>Safety First! Always obey the rules of the road. Obey all traffic signals,
+                                        signs, and laws. Get in the mindset of “driving” your bike—not just “riding”
+                                        your bike. This will help you be a more focused and legally compliant bike
+                                        rider. </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    My bike has been in storage is it safe to ride?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <small>Safety First! Always obey the rules of the road. Obey all traffic signals,
+                                        signs, and laws. Get in the mindset of “driving” your bike—not just “riding”
+                                        your bike. This will help you be a more focused and legally compliant bike
+                                        rider. </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Section-05 
+                    Frequently Asked Questions area End Here -->
+
+
+        <!-- Section-06 Bonnus Part-01 
+                                   Contact Us Start Here -->
+        <Section class="container my-5">
+            <form>
+                <h3 id="contact" class="text-center pb-3">Contact Us</h3>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="my-2">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="my-2">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *"
+                                value="" />
+                        </div>
+                        <div class="my-2">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
+                                value="" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                                style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                </div>
+            </form>
+        </Section>
+        <!-- Section-06 Bonnus Part-01 
+                                   Contact us Start Here -->
+
+
+        <!-- Section-07 Bonnus Part-02
+                                   Why we best Start Here -->
+        <section class="container-fluid py-5 background-img">
+            <div class="container">
+                <div class="text-center py-3">
+                    <h1>WHY <span class="purpale">carRid?</span></h1>
+                    <p>Our pricing experts' exclusive insights help you buy a new or used car and get a loan</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h3>NEW CARS</h3>
+                        <ul>
+                            <li>Get exclusive pricing information for almost any make and model</li>
+                            <li>Our pricing experts constantly monitor the latest deals to give you guidance you won't
+                                find anywhere else</li>
+                            <li>Once you've decided on a car, we'll connect you directly to the Internet department at a
+                                trusted local dealership</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <h3>USED CARS</h3>
+                        <ul>
+                            <li>Our easy-to-navigate local listings come exclusively from trusted dealers</li>
+                            <li>Save searches and vehicles you're interested in for future reference - no sign-up or
+                                log-in required</li>
+                            <li>Contact dealers for more information on individual models with one click</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <h3>AUTO LOANS</h3>
+                        <ul>
+                            <li>We offer financing for almost any credit situation</li>
+                            <li>Start the simple loan process in just 60 seconds</li>
+                            <li>Our lender network has helped millions of customers get new and used car loans</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section-07 Bonnus Part-02
+                                   Why we best  End Here -->
+
+
+    </main>
+
+
+    <!-- Footer area Start Here  -->
+    <footer class="container-fluid footer-bg py-5 news-card-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9 d-flex flex-column justify-content-start">
+
+                    <!-- Top nav  -->
+                    <ul class="d-flex ps-0">
+                        <li style="list-style: none;">
+                            <a class="nav-link active news-card-text" aria-current="page" href="index.html">Download
+                                Now</a>
+                        </li>
+                        <li style="list-style: none;">
+                            <a class="nav-link news-card-text" href="index.html">License</a>
+                        </li>
+                    </ul>
+
+                    <!-- Bottom nav  -->
+                    <ul class="f-style mb-3 ps-0">
+                        <li style="list-style: none;">
+                            <a class="nav-link active news-card-text" aria-current="page" href="index.html">About</a>
+                        </li>
+                        <li style="list-style: none;">
+                            <a class="nav-link news-card-text" href="index.html">Features</a>
+                        </li>
+                        <li style="list-style: none;">
+                            <a class="nav-link news-card-text" href="index.html">Pricing</a>
+                        </li>
+                        <li style="list-style: none;">
+                            <a class="nav-link news-card-text" href="index.html">Careers</a>
+                        </li>
+                        <li style="list-style: none;">
+                            <a class="nav-link news-card-text" href="#">Help</a>
+                        </li>
+                        <li style="list-style: none;">
+                            <a class="nav-link news-card-text" href="index.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Link  -->
+                    <div class="py-3">
+                        <section class="dark-grey-text">
+                            <p class="font-weight-bold">Follow us on:</p>
+                            <div class="icon">
+                                <a href="#" class="mx-1"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="mx-1"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="mx-1"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="mx-1"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="mx-1"><i class="fab fa-pinterest"></i></a>
+                                <a href="#" class="mx-1"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="mx-1"><i class="fab fa-github"></i></a>
+                                <a href="#" class="mx-1"><i class="fab fa-stack-overflow"></i></a>
+                            </div>
+                        </section>
+                    </div>
+                    <p class="ms-2">&copy; 2020 bike. All rights reserved</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h2 class="mb-2">Get the App</h2>
+                    <div>
+                        <img class="border rounded my-3" src="images/Icons/app-store.png" alt="" width="162"
+                            height="48">
+                    </div>
+                    <div>
+                        <img class="border rounded" src="images/Icons/google play.png" alt="" width="162" height="48">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer area End Here -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

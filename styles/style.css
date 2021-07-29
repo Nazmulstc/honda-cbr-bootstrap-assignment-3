@@ -1,0 +1,58 @@
+/* Google Fots */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner-bg{
+    background-color: #264653;
+}
+.btn-bg{
+    background-color: #E76F51;
+}
+.text-white{
+    color:#ffff;
+}
+.title-text{
+    color: #18191F;
+}
+.news-card-text{
+    color: #6C6C6C;
+}
+.purpale{
+    color: #E76F51;
+}
+.happy-card-title{
+    color: #23A6F0;
+}
+.f-style{
+    display: flex;
+}
+.background-img{
+    background-image: linear-gradient(#e6e6e6, #d3d3dd);
+}
+.footer-bg{
+    background: #0B0D17;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .banner-img img{
+        width:320px;
+        height: 260px;
+    }
+    .fetured-bikes img{
+        width:290px;
+        height: 245;
+    }
+    .card-img-top{
+        width:295px;
+        height: 224;
+    }
+    .latest-news img{
+        width:270px;
+        height: 505;
+    }
+    .f-style{
+        display: block;
+    }
+}
